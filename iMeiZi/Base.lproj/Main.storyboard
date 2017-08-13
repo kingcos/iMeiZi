@@ -20,7 +20,7 @@
                         <sections>
                             <tableViewSection id="dbo-pN-VNn">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="tGP-TG-ubV" detailTextLabel="l48-Z9-KxQ" style="IBUITableViewCellStyleValue1" id="Y3r-px-2de">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="clearCache" textLabel="tGP-TG-ubV" detailTextLabel="l48-Z9-KxQ" style="IBUITableViewCellStyleValue1" id="Y3r-px-2de">
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y3r-px-2de" id="f9R-cj-iHa">
@@ -74,6 +74,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="设置" id="2ry-De-6BO"/>
+                    <connections>
+                        <outlet property="clearCacheCell" destination="Y3r-px-2de" id="WUf-xP-ERM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2J-ma-cQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
