@@ -1,3 +1,25 @@
-PODFILE CHECKSUM: 26c08e767f91357526a20296509ef65f1e33967c
+PODS:
+  - Crashlytics (3.8.5):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.12)
+  - Kingfisher (3.10.4)
+  - PKHUD (4.2.3)
+  - SKPhotoBrowser (4.0.1)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - Kingfisher
+  - PKHUD
+  - SKPhotoBrowser
+
+SPEC CHECKSUMS:
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  SKPhotoBrowser: 3a7c6fc02aa1620ab17253a47a49fafda46536e8
+
+PODFILE CHECKSUM: fa1be7d0e8502574b4f026431f0aa964cab883b3
 
 COCOAPODS: 1.2.1

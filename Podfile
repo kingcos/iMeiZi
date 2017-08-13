@@ -6,5 +6,18 @@ target 'iMeiZi' do
   use_frameworks!
 
   # Pods for iMeiZi
+  
+  # Fabric
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
+  # Photo browser
+  pod 'SKPhotoBrowser'
+  
+  # Image from web
+  pod 'Kingfisher'
+  
+  # HUD
+  pod 'PKHUD'
 
 end
