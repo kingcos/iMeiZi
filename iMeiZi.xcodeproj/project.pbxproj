@@ -13,6 +13,7 @@
 		84FEC94F1F402E7A00771094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC94D1F402E7A00771094 /* LaunchScreen.storyboard */; };
 		84FEC9611F40355B00771094 /* SettingsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9601F40355B00771094 /* SettingsTableController.swift */; };
 		84FEC9631F40358400771094 /* PhotosCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9621F40358400771094 /* PhotosCollectionController.swift */; };
+		84FEC9651F40388200771094 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9641F40388200771094 /* AboutController.swift */; };
 		CBCB6CB3BB956E50F8B997AD /* Pods_iMeiZi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90A0DECE79D0DFB8CC5098 /* Pods_iMeiZi.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		84FEC9501F402E7A00771094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FEC9601F40355B00771094 /* SettingsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableController.swift; sourceTree = "<group>"; };
 		84FEC9621F40358400771094 /* PhotosCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionController.swift; sourceTree = "<group>"; };
+		84FEC9641F40388200771094 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		8D106E3B17EFF979275923BB /* Pods-iMeiZi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeiZi.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMeiZi/Pods-iMeiZi.release.xcconfig"; sourceTree = "<group>"; };
 		AEADD9A9792657BE6ABEAE5A /* Pods-iMeiZi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeiZi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeiZi/Pods-iMeiZi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 			children = (
 				84FEC9601F40355B00771094 /* SettingsTableController.swift */,
 				84FEC9621F40358400771094 /* PhotosCollectionController.swift */,
+				84FEC9641F40388200771094 /* AboutController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				84FEC9451F402E7A00771094 /* AppDelegate.swift in Sources */,
 				84FEC9611F40355B00771094 /* SettingsTableController.swift in Sources */,
 				84FEC9631F40358400771094 /* PhotosCollectionController.swift in Sources */,
+				84FEC9651F40388200771094 /* AboutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
