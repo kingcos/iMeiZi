@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8420545B1F40CB3100AB5717 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842054591F40CB3100AB5717 /* PhotoCell.swift */; };
+		8420545C1F40CB3100AB5717 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8420545A1F40CB3100AB5717 /* PhotoCell.xib */; };
+		8428C0E91F40B47E000A3107 /* MeiZi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428C0E81F40B47E000A3107 /* MeiZi.swift */; };
+		84B6D5D51F40C85600704657 /* PhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D5D41F40C85600704657 /* PhotosController.swift */; };
+		84B6D5D71F40C8C500704657 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D5D61F40C8C500704657 /* Constant.swift */; };
+		84DD70DA1F40A6B300200D26 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD70D91F40A6B300200D26 /* Network.swift */; };
 		84FEC9451F402E7A00771094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9441F402E7A00771094 /* AppDelegate.swift */; };
 		84FEC94A1F402E7A00771094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC9481F402E7A00771094 /* Main.storyboard */; };
 		84FEC94C1F402E7A00771094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC94B1F402E7A00771094 /* Assets.xcassets */; };
 		84FEC94F1F402E7A00771094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC94D1F402E7A00771094 /* LaunchScreen.storyboard */; };
 		84FEC9611F40355B00771094 /* SettingsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9601F40355B00771094 /* SettingsTableController.swift */; };
-		84FEC9631F40358400771094 /* PhotosCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9621F40358400771094 /* PhotosCollectionController.swift */; };
 		84FEC9651F40388200771094 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9641F40388200771094 /* AboutController.swift */; };
 		CBCB6CB3BB956E50F8B997AD /* Pods_iMeiZi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90A0DECE79D0DFB8CC5098 /* Pods_iMeiZi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D90A0DECE79D0DFB8CC5098 /* Pods_iMeiZi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMeiZi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842054591F40CB3100AB5717 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		8420545A1F40CB3100AB5717 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		8428C0E81F40B47E000A3107 /* MeiZi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeiZi.swift; sourceTree = "<group>"; };
+		84B6D5D41F40C85600704657 /* PhotosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosController.swift; sourceTree = "<group>"; };
+		84B6D5D61F40C8C500704657 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		84DD70D91F40A6B300200D26 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		84FEC9411F402E7A00771094 /* iMeiZi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeiZi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FEC9441F402E7A00771094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FEC9491F402E7A00771094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,7 +37,6 @@
 		84FEC94E1F402E7A00771094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FEC9501F402E7A00771094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FEC9601F40355B00771094 /* SettingsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableController.swift; sourceTree = "<group>"; };
-		84FEC9621F40358400771094 /* PhotosCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionController.swift; sourceTree = "<group>"; };
 		84FEC9641F40388200771094 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		8D106E3B17EFF979275923BB /* Pods-iMeiZi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeiZi.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMeiZi/Pods-iMeiZi.release.xcconfig"; sourceTree = "<group>"; };
 		AEADD9A9792657BE6ABEAE5A /* Pods-iMeiZi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeiZi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeiZi/Pods-iMeiZi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				84FEC9601F40355B00771094 /* SettingsTableController.swift */,
-				84FEC9621F40358400771094 /* PhotosCollectionController.swift */,
 				84FEC9641F40388200771094 /* AboutController.swift */,
+				84B6D5D41F40C85600704657 /* PhotosController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,6 +117,7 @@
 		84FEC9591F40323E00771094 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8428C0E81F40B47E000A3107 /* MeiZi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +125,8 @@
 		84FEC95A1F40323E00771094 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				84DD70D91F40A6B300200D26 /* Network.swift */,
+				84B6D5D61F40C8C500704657 /* Constant.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -121,6 +134,8 @@
 		84FEC95B1F40323E00771094 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				842054591F40CB3100AB5717 /* PhotoCell.swift */,
+				8420545A1F40CB3100AB5717 /* PhotoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8420545C1F40CB3100AB5717 /* PhotoCell.xib in Resources */,
 				84FEC94F1F402E7A00771094 /* LaunchScreen.storyboard in Resources */,
 				84FEC94C1F402E7A00771094 /* Assets.xcassets in Resources */,
 				84FEC94A1F402E7A00771094 /* Main.storyboard in Resources */,
@@ -272,9 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DD70DA1F40A6B300200D26 /* Network.swift in Sources */,
 				84FEC9451F402E7A00771094 /* AppDelegate.swift in Sources */,
+				84B6D5D71F40C8C500704657 /* Constant.swift in Sources */,
+				84B6D5D51F40C85600704657 /* PhotosController.swift in Sources */,
+				8428C0E91F40B47E000A3107 /* MeiZi.swift in Sources */,
 				84FEC9611F40355B00771094 /* SettingsTableController.swift in Sources */,
-				84FEC9631F40358400771094 /* PhotosCollectionController.swift in Sources */,
+				8420545B1F40CB3100AB5717 /* PhotoCell.swift in Sources */,
 				84FEC9651F40388200771094 /* AboutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
