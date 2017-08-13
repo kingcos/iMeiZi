@@ -11,8 +11,8 @@
 		84FEC94A1F402E7A00771094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC9481F402E7A00771094 /* Main.storyboard */; };
 		84FEC94C1F402E7A00771094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC94B1F402E7A00771094 /* Assets.xcassets */; };
 		84FEC94F1F402E7A00771094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC94D1F402E7A00771094 /* LaunchScreen.storyboard */; };
-		84FEC95D1F40347D00771094 /* ImageCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC95C1F40347D00771094 /* ImageCollectionController.swift */; };
-		84FEC95F1F4034A500771094 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC95E1F4034A500771094 /* SettingsController.swift */; };
+		84FEC9611F40355B00771094 /* SettingsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9601F40355B00771094 /* SettingsTableController.swift */; };
+		84FEC9631F40358400771094 /* PhotosCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC9621F40358400771094 /* PhotosCollectionController.swift */; };
 		CBCB6CB3BB956E50F8B997AD /* Pods_iMeiZi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D90A0DECE79D0DFB8CC5098 /* Pods_iMeiZi.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +24,8 @@
 		84FEC94B1F402E7A00771094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FEC94E1F402E7A00771094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FEC9501F402E7A00771094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84FEC95C1F40347D00771094 /* ImageCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionController.swift; sourceTree = "<group>"; };
-		84FEC95E1F4034A500771094 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		84FEC9601F40355B00771094 /* SettingsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableController.swift; sourceTree = "<group>"; };
+		84FEC9621F40358400771094 /* PhotosCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionController.swift; sourceTree = "<group>"; };
 		8D106E3B17EFF979275923BB /* Pods-iMeiZi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeiZi.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMeiZi/Pods-iMeiZi.release.xcconfig"; sourceTree = "<group>"; };
 		AEADD9A9792657BE6ABEAE5A /* Pods-iMeiZi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeiZi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeiZi/Pods-iMeiZi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +95,8 @@
 		84FEC9581F40323E00771094 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				84FEC95C1F40347D00771094 /* ImageCollectionController.swift */,
-				84FEC95E1F4034A500771094 /* SettingsController.swift */,
+				84FEC9601F40355B00771094 /* SettingsTableController.swift */,
+				84FEC9621F40358400771094 /* PhotosCollectionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,9 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84FEC95F1F4034A500771094 /* SettingsController.swift in Sources */,
 				84FEC9451F402E7A00771094 /* AppDelegate.swift in Sources */,
-				84FEC95D1F40347D00771094 /* ImageCollectionController.swift in Sources */,
+				84FEC9611F40355B00771094 /* SettingsTableController.swift in Sources */,
+				84FEC9631F40358400771094 /* PhotosCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

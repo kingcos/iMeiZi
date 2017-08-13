@@ -1,5 +1,5 @@
 //
-//  ImageCollectionController.swift
+//  PhotosCollectionController.swift
 //  iMeiZi
 //
 //  Created by kingcos on 13/08/2017.
@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class ImageCollectionController: UICollectionViewController {
+class PhotosCollectionController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
