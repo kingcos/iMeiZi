@@ -19,5 +19,8 @@ target 'iMeiZi' do
   
   # HUD
   pod 'PKHUD'
+  
+  # JSON
+  pod 'HandyJSON'
 
 end
