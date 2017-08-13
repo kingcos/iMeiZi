@@ -22,5 +22,12 @@ target 'iMeiZi' do
   
   # JSON
   pod 'HandyJSON'
+  
+  # Dropdown menu
+  pod 'BTNavigationDropdownMenu', :git =>
+  'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git'
+  
+  # Refresh
+  pod 'MJRefresh'
 
 end

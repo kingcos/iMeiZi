@@ -7,9 +7,24 @@
 //
 
 import UIKit
+import BTNavigationDropdownMenu
+import MJRefresh
 
 class PhotosController: UIViewController {
     
+    let arr = ["全部", "大胸", "翘臀", "黑丝", "美臀", "清新", "杂烩"]
+    let dict: [String: PhotoCategory] = [
+        "全部": .all,
+        "大胸": .daXiong,
+        "翘臀": .qiaoTun,
+        "黑丝": .heiSi,
+        "美臀": .meiTui,
+        "清新": .qingXin,
+        "杂烩": .zaHui
+    ]
+    
+    var photoCategory = PhotoCategory.all
+    var page = 1
     var iMeiZiArray: [MeiZi]?
     
     lazy var collectionView: UICollectionView? = { [weak self] in
@@ -29,12 +44,15 @@ class PhotosController: UIViewController {
                             bundle: nil),
                       forCellWithReuseIdentifier: PHOTO_CELL_ID)
         
+        view.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(headerRefresh))
+        view.mj_footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: #selector(footerRefresh))
+        
         return view
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setup()
     }
 
@@ -47,7 +65,7 @@ extension PhotosController {
     }
     
     private func setupLogic() {
-        Network.getWith(.all, in: 1) { json in
+        Network.getWith(photoCategory, in: 1) { json in
             if let composition = Result.deserialize(from: json) {
                 self.iMeiZiArray = composition.results
                 DispatchQueue.main.async {
@@ -58,6 +76,24 @@ extension PhotosController {
     }
     
     private func setupUI() {
+        let menuView = BTNavigationDropdownMenu(title: BTTitle.index(0),
+                                                items: arr)
+        navigationItem.titleView = menuView
+        menuView.didSelectItemAtIndexHandler = { [weak self] indexPath in
+            guard let strongSelf = self,
+                let category = strongSelf.dict[strongSelf.arr[indexPath]] else { return }
+            Network.getWith(category, in: 1) { json in
+                if let composition = Result.deserialize(from: json) {
+                    strongSelf.photoCategory = category
+                    strongSelf.iMeiZiArray = composition.results
+                    
+                    DispatchQueue.main.async {
+                        strongSelf.collectionView?.reloadData()
+                    }
+                }
+            }
+        }
+        
         guard let collectionView = collectionView else { return }
         view.addSubview(collectionView)
     }
@@ -81,5 +117,37 @@ extension PhotosController: UICollectionViewDataSource {
         }
         
         return cell
+    }
+}
+
+extension PhotosController {
+    func headerRefresh() {
+        collectionView?.mj_header.endRefreshing()
+        Network.getWith(photoCategory, in: 1) { json in
+            if let composition = Result.deserialize(from: json) {
+                self.iMeiZiArray = composition.results
+                
+                DispatchQueue.main.async {
+                    self.collectionView?.reloadData()
+                }
+            }
+        }
+    }
+    
+    func footerRefresh() {
+        collectionView?.mj_footer.endRefreshing()
+        Network.getWith(photoCategory, in: page + 1) { json in
+            if let composition = Result.deserialize(from: json),
+                let results = composition.results {
+                self.page += 1
+                for result in results {
+                    self.iMeiZiArray?.append(result)
+                }
+                
+                DispatchQueue.main.async {
+                    self.collectionView?.reloadData()
+                }
+            }
+        }
     }
 }

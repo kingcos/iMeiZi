@@ -107,9 +107,9 @@
 		84FEC9581F40323E00771094 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84B6D5D41F40C85600704657 /* PhotosController.swift */,
 				84FEC9601F40355B00771094 /* SettingsTableController.swift */,
 				84FEC9641F40388200771094 /* AboutController.swift */,
-				84B6D5D41F40C85600704657 /* PhotosController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
