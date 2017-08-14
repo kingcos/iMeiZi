@@ -96,6 +96,8 @@ extension PhotosController {
         
         guard let collectionView = collectionView else { return }
         view.addSubview(collectionView)
+        
+        collectionView.mj_header.beginRefreshing()
     }
 }
 

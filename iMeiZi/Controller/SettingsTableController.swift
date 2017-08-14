@@ -9,6 +9,7 @@
 import UIKit
 import SafariServices
 import PKHUD
+import Kingfisher
 
 class SettingsTableController: UITableViewController {
     
@@ -24,21 +25,25 @@ class SettingsTableController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        setup()
+        setupCacheLabel()
     }
 
 }
 
 extension SettingsTableController {
-    func setup() {
+    func setupCacheLabel() {
         calculateCache { cacheSize in
             DispatchQueue.main.async {
-                self.clearCacheCell.detailTextLabel?.text = cacheSize
+                self.clearCacheCell.detailTextLabel?.text = String(format: "%.2lf MB", cacheSize)
             }
         }
     }
     
-    func calculateCache(completion: @escaping (String) -> ()) {
+    func calculateCache(completion: @escaping (Double) -> ()) {
+        let cache = KingfisherManager.shared.cache
+        cache.calculateDiskCacheSize { completion(Double($0) / 1024 / 1024) }
+        
+        /*
         guard let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory,
                                                             .userDomainMask,
                                                             true).first,
@@ -58,9 +63,14 @@ extension SettingsTableController {
         }
         
         completion("\(size / 1024 / 1024) MB")
+         */
     }
     
     func clearCache(completion: @escaping () -> ()) {
+        KingfisherManager.shared.cache.clearDiskCache { 
+            completion()
+        }
+        /*
         guard let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory,
                                                                   .userDomainMask,
                                                                   true).first,
@@ -74,6 +84,7 @@ extension SettingsTableController {
         }
         
         completion()
+         */
     }
 }
 
@@ -88,7 +99,7 @@ extension SettingsTableController {
         switch id {
         case "clearCache":
             clearCache() {
-                self.setup()
+                self.setupCacheLabel()
                 HUD.flash(.success, delay: 1.0)
             }
         case "about":
