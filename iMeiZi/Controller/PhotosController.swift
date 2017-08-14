@@ -9,6 +9,7 @@
 import UIKit
 import BTNavigationDropdownMenu
 import MJRefresh
+import SKPhotoBrowser
 
 class PhotosController: UIViewController {
     
@@ -25,7 +26,19 @@ class PhotosController: UIViewController {
     
     var photoCategory = PhotoCategory.all
     var page = 1
-    var iMeiZiArray: [MeiZi]?
+    
+    var photos = [SKPhoto]()
+    
+    var iMeiZiArray: [MeiZi]? {
+        didSet {
+            guard let iMeiZiArray = iMeiZiArray else { return }
+            photos.removeAll()
+            _ = iMeiZiArray.map { iMeiZi in
+                guard let url = iMeiZi.imageURL else { return }
+                photos.append(SKPhoto.photoWithImageURL(url))
+            }
+        }
+    }
     
     lazy var collectionView: UICollectionView? = { [weak self] in
         guard let strongSelf = self else { return nil }
@@ -38,6 +51,7 @@ class PhotosController: UIViewController {
         
         let view = UICollectionView(frame: strongSelf.view.bounds,
                                     collectionViewLayout: layout)
+        view.delegate = self
         view.dataSource = self
         view.backgroundColor = .white
         view.register(UINib(nibName: String(describing: PhotoCell.self),
@@ -119,6 +133,14 @@ extension PhotosController: UICollectionViewDataSource {
         }
         
         return cell
+    }
+}
+
+extension PhotosController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let browser = SKPhotoBrowser(photos: photos)
+        browser.initializePageIndex(indexPath.row)
+        present(browser, animated: true)
     }
 }
 
