@@ -1,0 +1,43 @@
+PODS:
+  - BTNavigationDropdownMenu (0.4.1)
+  - Crashlytics (3.8.5):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.12)
+  - HandyJSON (1.7.2)
+  - Kingfisher (3.10.4)
+  - MJRefresh (3.1.12)
+  - PKHUD (4.2.3)
+  - SKPhotoBrowser (4.0.1)
+
+DEPENDENCIES:
+  - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`)
+  - Crashlytics
+  - Fabric
+  - HandyJSON
+  - Kingfisher
+  - MJRefresh
+  - PKHUD
+  - SKPhotoBrowser
+
+EXTERNAL SOURCES:
+  BTNavigationDropdownMenu:
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
+CHECKOUT OPTIONS:
+  BTNavigationDropdownMenu:
+    :commit: 934293ecc4d3c317dd77677a7f2be05934940503
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
+SPEC CHECKSUMS:
+  BTNavigationDropdownMenu: 4a88996ad514f2feff98481eb2d6a5cb7520f76c
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  HandyJSON: e7ad0483005826baba1d1c251cd98d0aa8bd8cce
+  Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  SKPhotoBrowser: 3a7c6fc02aa1620ab17253a47a49fafda46536e8
+
+PODFILE CHECKSUM: 514073628af865a63fe66fc1f0f2bac6c21b9a06
+
+COCOAPODS: 1.2.1
