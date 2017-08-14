@@ -12,9 +12,9 @@ A demo app browse beauties from web.
 
 Clone 或下载后，`pod install` 即可。
 
-## ScreenShots
+## Screenshots
 
-![](ScreenShots/Functions.gif)
+![](Screenshots/Functions.gif)
 
 ## Podfile
 
